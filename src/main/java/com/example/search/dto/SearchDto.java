@@ -1,33 +1,38 @@
 package com.example.search.dto;
 
+import lombok.Getter;
+import lombok.Setter;
 
+
+@Getter
+@Setter
 public class SearchDto {
 
-    private String profileValue;
-    private String profileId;
-    private String profileType;
+    private String profileValue="";
+    private String profileId="";
+    private String profileType="";
 
-    private String searchId;
+    private String searchId="";
 
-    private String valueType ;
+    private String valueType="" ;
 
-    private String questionValue;
-    private String questionId;
-    private Boolean questionStatus;
+    private String questionValue="";
+    private String questionId="";
+    private Boolean questionStatus=false;
 
-    private String askerProfileId;
-    private String askerProfileName;
+    private String askerProfileId="";
+    private String askerProfileName="";
 
-    private int numberOfLikes;
+    private int numberOfLikes=0;
 
-    private int numberOfDislikes;
+    private int numberOfDislikes=0;
 
-    private String approvedAnswerId;
-    private String approvedAnswer;
+    private String approvedAnswerId="";
+    private String approvedAnswer="";
 
-    private String approvedAnswererId;
-    private String approvedAnswererProfile;
+    private String approvedAnswererId="";
+    private String approvedAnswererProfile="";
 
-    private String categoryId;
-    private String categoryName;
+    private String categoryId="";
+    private String categoryName="";
 }

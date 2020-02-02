@@ -25,8 +25,10 @@ import org.springframework.web.bind.annotation.*;
 //        return new ResponseEntity<String>(searchDocCreated.getProductId(),HttpStatus.CREATED);
 //    }
 
-        @GetMapping("/searchFunction/{pageSize}/{pageNumber}/{keyword}")
-        public ResponseEntity<Page<SearchEntity>> search(@PathVariable("pageSize")int pageSize, @PathVariable("pageNumber")int pageNumber, @PathVariable("keyword") String keyword)
+        @GetMapping("/searchFunction")
+        public ResponseEntity<Page<SearchEntity>> search(@RequestParam(defaultValue = "0") Integer pageNumber,
+                                                         @RequestParam(defaultValue = "5") Integer pageSize,
+                                                         @RequestParam("keyword") String keyword)
         {
             return new ResponseEntity<Page<SearchEntity>>(searchService.search(pageSize,pageNumber,keyword),HttpStatus.OK);
         }

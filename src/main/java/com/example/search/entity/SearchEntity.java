@@ -13,47 +13,47 @@ public class SearchEntity
 {
 
     @Indexed(name="profileValue",type="text")
-    String profileValue;
+    private String profileValue="";
     @Indexed(name="profileId",type="string")
-    String profileId;
+    private String profileId="";
     @Indexed(name="profileType",type="string")
-    String profileType;
+    private String profileType="";
     @Id
     @Indexed(name="searchId",type="string")
-    String searchId;
+    private String searchId="";
 
     @Indexed(name="valueType",type="string")
-    String valueType ;
+    private String valueType="";
 
     @Indexed(name="questionValue",type="text")
-    String questionValue;
+    private String questionValue="";
     @Indexed(name="questionId",type="string")
-    String questionId;
+    private String questionId="";
     @Indexed(name="questionStatus",type="string")
-    Boolean questionStatus;
+    private Boolean questionStatus=false;
     @Indexed(name="askerProfileId",type="string")
-    String askerProfileId;
-    @Indexed(name="askerProfleName",type="text")
-    String askerProfileName;
+    private String askerProfileId="";
+    @Indexed(name="askerProfileName",type="text")
+    private String askerProfileName="";
 
     @Indexed(name="numberOfLikes",type="string")
-    int numberOfLikes;
+    private int numberOfLikes=0;
 
     @Indexed(name="numberOfDislikes",type="string")
-    int numberOfDislikes;
+    private int numberOfDislikes=0;
 
     @Indexed(name="approvedAnswerId",type="string")
-    String approvedAnswerId;
+    private String approvedAnswerId="";
     @Indexed(name="approvedAnswer",type="text")
-    String approvedAnswer;
+    private String approvedAnswer="";
     @Indexed(name="approvedAnswererId",type="string")
-    String approvedAnswererId;
+    private String approvedAnswererId="";
     @Indexed(name="approvedAnswererProfile",type="text")
-    String approvedAnswererProfile;
+    private String approvedAnswererProfile="";
 
     @Indexed(name="categoryId",type="string")
-    String categoryId;
+    private String categoryId="";
     @Indexed(name="categoryName",type="text")
-    String categoryName;
+    private String categoryName="";
 
 }
